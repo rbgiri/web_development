@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flex box</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #heading{text-align: center;}
+        #container{
+            height: 400px;
+            width: 600px;
+            background-color: palegoldenrod;
+            border: 5px solid black;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap:nowrap;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            margin: 5px;
+            flex-grow: 1;
+        }
+        #box1{
+            background-color: blue;
+            order: 3;
+            
+        }
+        #box2{
+            background-color: red;
+            order: 2;
+        }
+        #box3{
+            background-color:green;
+            flex-grow: 2;
+            order: 4;
+        }
+        #box4{
+            background-color:aqua;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1 id="heading">Flex Container</h1>
+    <div id="container">
+        <div id="box1" class="box">Flex item 1</div>
+        <div id="box2" class="box">Flex item 2</div>
+        <div id="box3" class="box">Flex item 3</div>
+        <div id="box4" class="box">Flex item 4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animation</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color:forestgreen;
+            position: relative;
+            top: 100px;
+            left: 100px;
+
+            animation-name: ghoomer;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes ghoomer{
+            0%{left: 10px;}
+            50%{left: 50px;}
+            60%{left: 160px;}
+            100%{left: 200px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Animate</div>
+</body>
+</html>
